@@ -1,0 +1,60 @@
+@import "bootstrap/scss/bootstrap";
+
+/* Custom Bootstrap Overrides for ASEL POS */
+:root {
+  --bs-primary: #2D3A56;
+  --bs-danger: #FF6B6B;
+}
+
+body {
+  background-color: #F8F9FA;
+  font-family: 'Instrument Sans', sans-serif;
+}
+
+.bg-naval {
+  background-color: var(--bs-primary) !important;
+  color: white;
+}
+
+.text-naval {
+  color: var(--bs-primary) !important;
+}
+
+.bg-coral {
+  background-color: var(--bs-danger) !important;
+  color: white;
+}
+
+.text-coral {
+  color: var(--bs-danger) !important;
+}
+
+.border-coral {
+  border-color: var(--bs-danger) !important;
+}
+
+.btn-coral {
+  background-color: var(--bs-danger);
+  border-color: var(--bs-danger);
+  color: white;
+}
+
+.btn-coral:hover {
+  background-color: #fa5252;
+  border-color: #fa5252;
+  color: white;
+}
+
+/* Sidebar transitions */
+.sidebar-wrapper {
+  transition: all 0.3s ease;
+}
+
+.main-content {
+  transition: all 0.3s ease;
+}
+
+/* Hide Alpine components before initialization */
+[x-cloak] {
+  display: none !important;
+}
